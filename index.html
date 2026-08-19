@@ -48,11 +48,11 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Small & Subtle Play Store badge styles -->
+  <!-- Small & Subtle Play Store badge styles (updated to be smaller) -->
   <style>
     /* Make Play Store badge smaller and more subtle across the site */
     .play-badge {
-      height: 28px;
+      height: 20px; /* smaller base size */
       width: auto;
       opacity: 0.85;
       filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
@@ -62,19 +62,19 @@
 
     /* Slightly smaller inside the navbar CTA */
     .nav-cta .play-badge {
-      height: 24px;
+      height: 18px;
     }
 
     /* Keep hero CTA a bit larger but still subtle */
     .hero-cta-group .btn .play-badge,
     .btn.btn-primary.btn-lg .play-badge {
-      height: 36px;
+      height: 24px;
     }
 
     /* Mobile adjustments */
     @media (max-width: 640px) {
-      .play-badge { height: 20px; }
-      .hero-cta-group .btn .play-badge { height: 28px; }
+      .play-badge { height: 14px; }
+      .hero-cta-group .btn .play-badge { height: 18px; }
     }
   </style>
 </head>
@@ -557,36 +557,7 @@
             <ul class="feature-check-list">
               <li><svg viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01[...]
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01[...]" clip-rule="evenodd" />
                 </svg> Individual customer balance ledger</li>
-              <li><svg viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l[...]
-                </svg> Payment due date alerts</li>
-            </ul>
-          </div>
-
-          <!-- Feature 3: Expense Tracking -->
-          <div class="feature-card" data-reveal="fade-up" data-delay="300">
-            <div class="feature-header">
-              <div class="feature-icon-wrapper">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
-                  <line x1="12" y1="1" x2="12" y2="23" />
-                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                </svg>
-              </div>
-              <span class="feature-badge">Cost Control</span>
-            </div>
-            <h3 class="feature-title">Smart Expense Tracking</h3>
-            <p class="feature-desc">
-              Log daily operational costs including milk delivery, gas cylinders, stall rent, snacks purchase, and staff
-              wages. Calculate exact net margins.
-            </p>
-            <ul class="feature-check-list">
-              <li><svg viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd" />
-                </svg> Categorized tea stall expenses</li>
 [...] 
 </html>
